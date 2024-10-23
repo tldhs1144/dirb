@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies of Hacking Group Attacks</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Case Studies of Hacking Group Attacks Based on MITRE ATT&CK Framework</h1>
+</header>
+
+<article>
+    <h2>Introduction</h2>
+    <p>
+        This report explores various hacking group attacks using the MITRE ATT&CK framework.
+        The goal is to analyze techniques used by malicious actors and provide insights into
+        threat intelligence.
+    </p>
+
+    <h2>Case Study 1: Attack by Group XYZ</h2>
+    <p><strong>Group Overview:</strong> Group XYZ is known for targeted attacks on financial institutions.</p>
+    <p><strong>Attack Techniques:</strong> The following MITRE ATT&CK techniques were observed:</p>
+    <ul>
+        <li>Initial Access: Spear Phishing Attachment (T1566.001)</li>
+        <li>Execution: PowerShell (T1059.001)</li>
+        <li>Exfiltration: Exfiltration Over C2 Channel (T1041)</li>
+    </ul>
+
+    <h3>Incident Analysis</h3>
+    <p>
+        The attack started with a phishing email containing a malicious attachment.
+        Once executed, the malware established persistence and communicated with a C2 server
+        to exfiltrate sensitive data.
+    </p>
+
+    <h2>Case Study 2: APT29 Campaign</h2>
+    <p><strong>Group Overview:</strong> APT29 focuses on government espionage.</p>
+    <p><strong>Key Techniques:</strong></p>
+    <ul>
+        <li>Initial Access: Valid Accounts (T1078)</li>
+        <li>Lateral Movement: Remote Desktop Protocol (T1021.001)</li>
+        <li>Collection: Screen Capture (T1113)</li>
+    </ul>
+
+    <h3>Incident Analysis</h3>
+    <p>
+        APT29 used valid accounts to gain access to the target system and moved laterally through
+        the network using RDP. The attackers captured screenshots and collected other valuable data.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        These case studies highlight the importance of using threat frameworks like MITRE ATT&CK
+        to understand attacker behavior and prepare effective defenses. Continuous monitoring and
+        proactive threat hunting are essential to staying ahead of these threats.
+    </p>
+
+    <footer>
+        <p>Author: [Your Name]</p>
+        <p><a href="https://mitre-attack.org/">Learn more about MITRE ATT&CK</a></p>
+    </footer>
+</article>
+
+</body>
+</html>
